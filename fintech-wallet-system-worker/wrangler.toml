@@ -1,0 +1,9 @@
+name = "fintech-wallet-system"
+main = "index.js"
+compatibility_date = "2024-12-29"
+
+[[env.production]]
+account_id = "your_account_id"
+workers_dev = true
+route = "your-cloudflare-route"
+zone_id = "your_zone_id"

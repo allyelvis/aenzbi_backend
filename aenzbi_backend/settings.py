@@ -135,7 +135,7 @@ DATABASES = {
         'NAME': 'aenzbi_db',
         'USER': 'your_db_user',
         'PASSWORD': 'your_db_password',
-        'HOST': 'localhost',
+        'HOST': 'your_database_host',
         'PORT': '5432',
     }
 }

@@ -1,0 +1,16 @@
+runtime: python39
+
+env_variables:
+  DJANGO_SETTINGS_MODULE: "aenzbi_backend.settings.production"
+  DB_NAME: "aenzbi_db"
+  DB_USER: "your_db_user"
+  DB_PASSWORD: "your_db_password"
+  DB_HOST: "your_database_host"
+
+instance_class: F2
+
+entrypoint: gunicorn aenzbi_backend.wsgi
+
+automatic_scaling:
+  min_instances: 1
+  max_instances: 10
